@@ -1,10 +1,10 @@
 {
-  "name": "SikshaSarthi",
+  "name": "my-vercel-node-app",
   "version": "1.0.0",
-  "main": "work.js",
+  "main": "src/work.js",
   "scripts": {
-    "start": "node work.js",
-    "build": "echo 'No build step needed'"
+    "start": "node src/work.js",
+    "build": "echo 'No build needed'"
   },
 {
   "dependencies": {
