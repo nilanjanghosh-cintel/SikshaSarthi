@@ -1,4 +1,6 @@
 {
+  "name": "SikshaSarthi",
+  "version": "1.0.0",
   "main": "work.js",
   "scripts": {
     "start": "node work.js",
