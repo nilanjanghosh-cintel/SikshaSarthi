@@ -1,10 +1,9 @@
 {
-  "name": "my-vercel-node-app",
+  "name": "my-node-app",
   "version": "1.0.0",
   "main": "src/work.js",
   "scripts": {
-    "start": "node src/work.js",
-    "build": "echo 'No build needed'"
+    "start": "node src/work.js"
   },
 {
   "dependencies": {
