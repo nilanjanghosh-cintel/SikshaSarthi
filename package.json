@@ -1,4 +1,9 @@
 {
+  "main": "work.js",
+  "scripts": {
+    "start": "node work.js"
+  },
+{
   "dependencies": {
     "body-parser": "^1.20.2",
     "connect-mongo": "^5.1.0",
