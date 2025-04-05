@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    position: relative; /* Ensure body is positioned relatively */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vw;
+    text-align: center;
+    line-height: 100vh;
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 0.2;
+}
+  
+.placeholder-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 425px; /* Increased width to make it about 50% wider */
+    max-width: 90%;
+    background: white;
+    border: 2px solid rgba(0, 0, 0, .1);
+    color: #D6D6D6;
+    padding: 400px 58px; /* Increased padding for more height */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Use absolute positioning */
+    right: 0; /* Align to the right edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #1b1a1a;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    color: #424141;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: #E0E0E0; /* Darker background color */
+    border: 2px solid #B0B0B0; /* Darker border color */
+    border-radius: 40px;
+    font-size: 16px;
+    color: #333; /* Dark text color for better readability */
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #424141; /* Light gray placeholder text */
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    color: #8b8a8a;
+}
+
+.remember-forgot label input {
+    accent-color: #8b8a8a; /* Darker checkbox accent color */
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #8b8a8a; /* Set color to the desired shade */
+    text-decoration: none; /* Remove underline if desired */
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #49DACF; /* Dark background for button */
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: white; /* White text color for button */
+    font-weight: 650;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #333; /* Darker link color for better visibility */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    background-image: linear-gradient(#49dacee0, rgba(69, 127, 142, 0.88)), url(https://i.ibb.co/c8H15fG/haxeimage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 0; /* Reset margin-right to 0 for full width */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+.footer-container {
+    position: fixed; /* Fixes the footer to the bottom */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    left: 20px; /* Distance from the left edge of the viewport */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Space between image and text */
+}
+
+.footer-image {
+    width: 250px; /* Increased size of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a 3D effect */
+}
+
+.footer-text-info {
+    font-size: 26px; /* Adjust text size as needed */
+    color: #333; /* Text color */
+    font-family: 'Montserrat', sans-serif; /* Stylish font */
+    font-weight: 700; /* Bold text */
+    text-align: center; /* Center text horizontally */
+}
+
+

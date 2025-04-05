@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Community & Jobs</title>
+    <link rel="stylesheet" href="/styles/style.css"> 
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <img src="/images/logo.png" alt="Siksha Sarthi Logo">
+        <div class="cred">
+            <p>Welcome <span id="user-name">User</span></p>
+            <img class="user" src="/images/user.jpg" alt="User Profile">
+        </div>
+    </header>
+
+    <!-- Peer Community Section -->
+    <section class="peer-community">
+        <h1>Peer Community & Discussions</h1>
+        <p>Connect, collaborate, and grow with your peers.</p>
+        <div class="community-posts">
+            <div class="post">
+                <h3>John Doe</h3>
+                <p>Looking for teammates for an AI project. Anyone interested?</p>
+            </div>
+            <div class="post">
+                <h3>Jane Smith</h3>
+                <p>Anyone knows good resources for learning backend development?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Listings Section -->
+    <section class="job-container">
+        <h1>Job Openings</h1>
+        <div class="job-list">
+            <div class="job-card">
+                <h3>Software Developer</h3>
+                <p><strong>Company:</strong> Google</p>
+                <p><strong>Location:</strong> Bangalore, India</p>
+                <button class="apply-btn" onclick="openModal('Software Developer')">Apply</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Data Analyst</h3>
+                <p><strong>Company:</strong> Microsoft</p>
+                <p><strong>Location:</strong> Hyderabad, India</p>
+                <button class="apply-btn" onclick="openModal('Data Analyst')">Apply</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Modal -->
+    <div id="jobModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="jobTitle"></h2>
+            <p><strong>Description:</strong> This is a great opportunity to work at a leading tech company.</p>
+            <form>
+                <label>Name:</label>
+                <input type="text" required>
+                <label>Email:</label>
+                <input type="email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/scripts/script.js"></script>  
+</body>
+</html>
