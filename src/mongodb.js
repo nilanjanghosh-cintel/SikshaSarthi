@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
-const mongoUri = "mongodb+srv://arko:arko@cluster0.cfvcc.mongodb.net/LoginFormPractice?retryWrites=true&w=majority";
+// Use environment variable for security
+const mongoUri = process.env.MONGODB_URI;
 
-// Connect to MongoDB
 mongoose.connect(mongoUri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -29,5 +29,4 @@ const logInSchema = new mongoose.Schema({
 // Create model
 const LogInCollection = mongoose.model('LogInCollection', logInSchema);
 
-// Export the model
 module.exports = LogInCollection;
