@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-
+const mongoose = require('mongoose');
 const LogInCollection = require("./mongodb");
 const hbs = require("hbs")
 const port = process.env.PORT || 8000;
