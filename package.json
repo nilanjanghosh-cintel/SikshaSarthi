@@ -1,9 +1,9 @@
 {
   "name": "my-node-app",
   "version": "1.0.0",
-  "main": "src/work.js",
+  "main": "api/work.js",
   "scripts": {
-    "start": "node src/work.js"
+    "start": "node api/work.js"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
